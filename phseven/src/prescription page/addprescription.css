@@ -1,0 +1,21 @@
+.navbarcustom{
+    background-color: #e3f2fd;
+}
+
+.mainlogoimg{
+    width: 60px;
+}
+
+.customaddmedicin{
+    background-color: rgba(25, 84, 248, 0.808);
+}
+
+.medicinesection{
+    border: solid 1px rgba(25, 84, 248, 0.808) ;
+
+}
+
+
+.addprescriptionmaindiv{
+    margin-top: 7%;
+}

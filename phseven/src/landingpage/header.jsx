@@ -3,8 +3,6 @@ import mainlogo from "../assets/img/mainlogo.png";
 
 
 
-
-
 const header = () => {
     return (
         <>
@@ -21,27 +19,13 @@ const header = () => {
 
                     <nav id="navbar" className="navbar">
                         <ul>
-                            <li><NavLink className="nav-link scrollto active" to="/">Home</NavLink></li>
-                            <li><NavLink className="nav-link scrollto" to="/">About</NavLink></li>
-                            <li><NavLink className="nav-link scrollto" to="/">Login</NavLink></li>
-                            <li><NavLink className="nav-link scrollto" to="/">Portfolio</NavLink></li>
-                            <li><NavLink className="nav-link scrollto" to="/">Team</NavLink></li>
-                            <li><NavLink to="blog.html">Blog</NavLink></li>
-                            <li className="dropdown"><a to="/"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
+                            <li><NavLink className="nav-link scrollto active" exact to="/">Home</NavLink></li>
+                            <li><NavLink className="nav-link scrollto" exact to="/aboutus">About</NavLink></li>
+                            <li className="dropdown"><a to="/"><span>Sign in & Sign up</span> <i className="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><NavLink to="breafabout.html">Breaf About</NavLink></li>
-                                    <li className="dropdown"><NavLink to="/"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></NavLink>
-                                        <ul>
-                                            <li><NavLink to="/">Deep Drop Down 1</NavLink></li>
-                                            <li><NavLink to="/">Deep Drop Down 2</NavLink></li>
-                                            <li><NavLink to="/">Deep Drop Down 3</NavLink></li>
-                                            <li><NavLink to="/">Deep Drop Down 4</NavLink></li>
-                                            <li><NavLink to="/">Deep Drop Down 5</NavLink></li>
-                                        </ul>
-                                    </li>
-                                    <li><NavLink to="/">Drop Down 2</NavLink></li>
-                                    <li><NavLink to="/">Drop Down 3</NavLink></li>
-                                    <li><NavLink to="/">Drop Down 4</NavLink></li>
+                                    <li><NavLink to="/doctorlogin">Sign In</NavLink></li>
+                                    <li><NavLink to="/doctorsignup">Sign Up</NavLink></li>
+
                                 </ul>
                             </li>
                             <li><NavLink className="nav-link scrollto" to="/">Contact</NavLink></li>

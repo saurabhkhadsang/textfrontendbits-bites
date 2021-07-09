@@ -9,7 +9,86 @@ import idearemovebgpreview from "../assets/img/idearemovebgpreview.png";
 import prescriptionremovebgpreview from "../assets/img/prescriptionremovebgpreview.png";
 
 
+
+
+
+
 const middlecontent = () => {
+
+
+    const member1mail = () => {
+        window.open("mailto:riteshwanave@gmail.com", '_blank').focus();
+    };
+    const member1github = () => {
+        window.open("https://github.com/RiteshWanave", '_blank').focus();
+    };
+    const member1linkdin = () => {
+        window.open("https://www.linkedin.com/in/ritesh-wanave-68b723212/", '_blank').focus(); 
+    };
+
+
+    const member2mail = () => {
+        window.open("mailto:simransv1402@gmail.com", '_blank').focus(); 
+    };
+    const member2github = () => {
+        window.open("https://github.com/SimranSv", '_blank').focus(); 
+    };
+    const member2linkdin = () => {
+        window.open("https://www.linkedin.com/in/simran-vedpathak-b4a291207", '_blank').focus(); 
+    };
+
+
+    const member3mail = () => {
+        window.open("mailto:kulkarnivaishnavi499@gmail.com", '_blank').focus(); 
+    };
+    const member3github = () => {
+        window.open("https://github.com/vaishnavi802", '_blank').focus(); 
+    };
+    const member3linkdin = () => {
+        window.open("https://www.linkedin.com/in/vaishnavi-kulkarni-b0489a210", '_blank').focus(); 
+    };
+
+
+    const member4mail = () => {
+        window.open("mailto:saurabhkhadsang2018@gmail.com", '_blank').focus(); 
+    };
+    const member4github = () => {
+        window.open("https://github.com/saurabhkhadsang", '_blank').focus(); 
+    };
+    const member4linkdin = () => {
+        window.open("https://github.com/saurabhkhadsang", '_blank').focus(); 
+    };
+
+
+    const mentor1mail = () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    };
+    const mentor1github = () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    };
+    const mentor1linkdin = () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    };
+
+
+    const mentor2mail = () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    };
+    const mentor2github = () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    };
+    const mentor2linkdin = () => {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    };
+
+
+    const githubprojectrepo = () => {
+        window.open("https://github.com/RiteshWanave/Bits-Bytes.git", '_blank').focus(); 
+    };
+
+
+
+
 
     return (
 
@@ -26,7 +105,7 @@ const middlecontent = () => {
                             </h2>
                             <div >
                                 <div className="text-center text-lg-start">
-                                    <NavLink to="/" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <NavLink to="/aboutus" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span>Read More</span>
                                         <i className="bi bi-arrow-right"></i>
                                     </NavLink>
@@ -152,10 +231,10 @@ const middlecontent = () => {
                                     <div className="member-img">
                                         <img src={values3} className="img-fluid" alt="." />
                                         <div className="social">
-                                            <NavLink to="mailto:riteshwanave@gmail.com"><i className="bi bi-envelope"></i></NavLink>
-                                            <NavLink to="https://github.com/RiteshWanave"><i className="bi bi-github"></i></NavLink>
-                                            <NavLink to="https://www.linkedin.com/in/ritesh-wanave-68b723212/"><i className="bi bi-linkedin"></i></NavLink>
-                                            <NavLink to=""><i className="bi bi-instagram"></i></NavLink>
+                                            <NavLink to="" onClick={member1mail}><i className="bi bi-envelope"></i></NavLink>
+                                            <NavLink to="" onClick={member1github}><i className="bi bi-github"></i></NavLink>
+                                            <NavLink to="" onClick={member1linkdin}><i className="bi bi-linkedin"></i></NavLink>
+
                                         </div>
                                     </div>
                                     <div className="member-info">
@@ -172,10 +251,9 @@ const middlecontent = () => {
                                     <div className="member-img">
                                         <img src={values3} className="img-fluid" alt="." />
                                         <div className="social">
-                                            <NavLink to="/"><i className="bi bi-twitter"></i></NavLink>
-                                            <NavLink to="mailto:simransv1402@gmail.com"><i className="bi bi-envelope"></i></NavLink>
-                                            <NavLink to="https://github.com/SimranSv"><i className="bi bi-github"></i></NavLink>
-                                            <NavLink to="https://www.linkedin.com/in/simran-vedpathak-b4a291207"><i className="bi bi-linkedin"></i></NavLink>
+                                            <NavLink to="" onClick={member2mail}><i className="bi bi-envelope"></i></NavLink>
+                                            <NavLink to="" onClick={member2github}><i className="bi bi-github"></i></NavLink>
+                                            <NavLink to="" onClick={member2linkdin}><i className="bi bi-linkedin"></i></NavLink>
                                         </div>
                                     </div>
                                     <div className="member-info">
@@ -191,10 +269,9 @@ const middlecontent = () => {
                                     <div className="member-img">
                                         <img src={values3} className="img-fluid" alt="." />
                                         <div className="social">
-                                            <NavLink to="/"><i className="bi bi-twitter"></i></NavLink>
-                                            <NavLink to="mailto:kulkarnivaishnavi499@gmail.com"><i className="bi bi-envelope"></i></NavLink>
-                                            <NavLink to="https://github.com/vaishnavi802"><i className="bi bi-github"></i></NavLink>
-                                            <NavLink to="https://www.linkedin.com/in/vaishnavi-kulkarni-b0489a210"><i className="bi bi-linkedin"></i></NavLink>
+                                            <NavLink to="" onClick={member3mail}><i className="bi bi-envelope"></i></NavLink>
+                                            <NavLink to="" onClick={member3github}><i className="bi bi-github"></i></NavLink>
+                                            <NavLink to="" onClick={member2linkdin}><i className="bi bi-linkedin"></i></NavLink>
                                         </div>
                                     </div>
                                     <div className="member-info">
@@ -210,10 +287,9 @@ const middlecontent = () => {
                                     <div className="member-img">
                                         <img src={values3} className="img-fluid" alt="." />
                                         <div className="social">
-                                            <NavLink to="/"><i className="bi bi-twitter"></i></NavLink>
-                                            <NavLink to="mailto:saurabhkhadsang2018@gmail.com"><i className="bi bi-envelope"></i></NavLink>
-                                            <NavLink to="https://github.com/saurabhkhadsang"><i className="bi bi-github"></i></NavLink>
-                                            <NavLink to=""><i className="bi bi-linkedin"></i></NavLink>
+                                            <NavLink to="" onClick={member4mail}><i className="bi bi-envelope"></i></NavLink>
+                                            <NavLink to="" onClick={member4github}><i className="bi bi-github"></i></NavLink>
+                                            <NavLink to="" onClick={member4linkdin}><i className="bi bi-linkedin"></i></NavLink>
                                         </div>
                                     </div>
                                     <div className="member-info">
@@ -336,7 +412,7 @@ const middlecontent = () => {
                                             <i className="bi bi-github"></i>
                                             <h3>Github</h3>
                                             {/* <!-- <p>Monday - Friday<br>9:00AM - 05:00PM</p> --> */}
-                                            <NavLink to="https://github.com/RiteshWanave/Bits-Bytes.git">Bits-Bytes</NavLink>
+                                            <NavLink to="" onClick={githubprojectrepo}>Bits-Bytes</NavLink>
                                         </div>
                                     </div>
                                 </div>
