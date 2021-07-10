@@ -383,31 +383,31 @@ const middlecontent = () => {
 
                         <div className="row gy-4">
 
-                            <div className="col-lg-6">
+                            <div className="col-lg-12">
 
                                 <div className="row gy-4">
-                                    <div className="col-md-6">
+                                    <div className="col-md-3">
                                         <div className="info-box">
                                             <i className="bi bi-geo-alt"></i>
                                             <h3>Address</h3>
                                             <p>---------,<br />---------------------</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-3">
                                         <div className="info-box">
                                             <i className="bi bi-telephone"></i>
                                             <h3>Call Us</h3>
                                             <p>+91 85509 60012<br />+91 91754 86500</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-3">
                                         <div className="info-box">
                                             <i className="bi bi-envelope"></i>
                                             <h3>Email Us</h3>
                                             <p>help@pharmahelp.com<br />ph7apharmahelp@pharmahelp.com</p>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-3">
                                         <div className="info-box">
                                             <i className="bi bi-github"></i>
                                             <h3>Github</h3>
@@ -419,7 +419,7 @@ const middlecontent = () => {
 
                             </div>
 
-                            <div className="col-lg-6">
+                            {/* <div className="col-lg-6">
                                 <form action="forms/contact.php" method="post" className="php-email-form">
                                     <div className="row gy-4">
 
@@ -450,7 +450,7 @@ const middlecontent = () => {
                                     </div>
                                 </form>
 
-                            </div>
+                            </div> */}
 
                         </div>
 

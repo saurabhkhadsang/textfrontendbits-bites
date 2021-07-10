@@ -28,7 +28,7 @@ const header = () => {
 
                                 </ul>
                             </li>
-                            <li><NavLink className="nav-link scrollto" to="/">Contact</NavLink></li>
+                            {/* <li><NavLink className="nav-link scrollto" to="/">Contact</NavLink></li> */}
                             <li><NavLink className="getstarted scrollto" to="/">Get Started</NavLink></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>

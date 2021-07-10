@@ -6,7 +6,11 @@ import Landingmain from "./landingpage/landingmain";
 import Doctorlogin from "./loginandsignup/doctorlogin.js";
 import Doctorsignup from "./loginandsignup/doctorsignup.js";
 import Aboutus from "./aboutus/about";
-import Addprescription from "./prescription page/addprescription"
+
+import Allprescription from "./patprescriptionpage/allprescription";
+import Patpresciptionwithadd from "./patprescriptionpage/patpresciptionwithadd";
+import Createprescription from "./createprescriptionpage/createprescription";
+
 
 
 
@@ -19,7 +23,10 @@ function App() {
           <Route exact path="/doctorlogin" component={Doctorlogin}></Route>
           <Route exact path="/doctorsignup" component={Doctorsignup}></Route>
           <Route exact path="/aboutus" component={Aboutus}></Route>
-          <Route exact path="/addprescription" component={Addprescription}></Route>
+          <Route exact path="/patpresciption" component={Allprescription}></Route>
+          <Route exact path="/createprescription" component={Createprescription}></Route>
+          <Route exact path="/patpresciptionwithadd" component={Patpresciptionwithadd}></Route>
+        
 
           
         </Switch>

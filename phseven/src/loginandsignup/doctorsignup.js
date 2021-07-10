@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from "axios";
 
 
 
@@ -13,6 +14,72 @@ import { NavLink } from 'react-router-dom';
 
 const Doctorsignup = () => {
 
+
+    const [fname, setFname] = useState("");
+    const [lname, setLname] = useState("");
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
+
+
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+
+        const body = {
+            "username": username,
+            "fname": fname,
+            "lname": lname,
+            "email": email,
+            "password": password
+        }
+
+        const url = "https://ph7apharmahelp.herokuapp.com/api/signup"
+
+        axios.post(
+            url,
+            body,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': localStorage.getItem("token")
+                }
+            }
+        ).then(
+            response => {
+                if (response.status === 200) {
+
+                    const data = response.data;
+                    if (data.status === "400 Bad Request") {
+                        alert("something went wrong . Try Again")
+                        window.location = "/doctorsignup"
+                        return 0;
+                    }
+                    if (data.status === "403 User already exists") {
+                        alert("User Already Exist")
+                        window.location = "/doctorsignup"
+                        return 0;
+                    }
+                    localStorage.setItem('username', data.username);
+                    localStorage.setItem('token', data.token);
+                    alert("Account Created Sucessful")
+                    window.location = '/createprescription'
+                }
+            }
+        )
+            .catch(
+                err => {
+                    console.log(err)
+                    window.location = "/doctorsignup"
+                }
+            );
+
+    }
+
+
+
     return (
         <>
             <Header />
@@ -22,18 +89,17 @@ const Doctorsignup = () => {
                 <div className="doctorcontainer doctordiv" id="doctorcontainer">
 
                     <div className="form-doctorcontainer sign-in-doctorcontainer doctordiv">
-                        <form className="doctorform" action="#">
+                        <form className="doctorform" onSubmit={submitHandler}>
 
-                            <h1 className="doctorh1" >Sign UP</h1>
+                            <h3 className="doctorh1" >Sign UP</h3>
 
-                            <input className="doctorinput" type="text" placeholder="Full Name" />
-                            <input className="doctorinput" type="text" placeholder="Username" />
-                            <input className="doctorinput" type="email" placeholder="Email" />
-                            <input className="doctorinput" type="password" placeholder="Password" />
-                            <input className="doctorinput" type="password" placeholder="Confirm Password" />
+                            <input className="doctorinput" type="text" placeholder="First Name" value={fname} onChange={(event) => setFname(event.target.value)} />
+                            <input className="doctorinput" type="text" placeholder="Last Name" value={lname} onChange={(e) => setLname(e.target.value)} />
+                            <input className="doctorinput" type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                            <input className="doctorinput" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input className="doctorinput" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
                             <button className="doctorbutton" >Sign Up</button>
-                            {/* <a href="#">Forgot your password?</a> */}
                             <h6>Already User ?  <NavLink exact to="/doctorlogin">Sign In</NavLink></h6>
 
                         </form>
