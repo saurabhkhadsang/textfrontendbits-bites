@@ -46,6 +46,7 @@ const Doctorlogin = () => {
                     }
                     localStorage.setItem("username", data.username);
                     localStorage.setItem("token", data.token);
+                    localStorage.setItem('type', data.type);
                     window.location = "/patpresciption";
 
                 }
