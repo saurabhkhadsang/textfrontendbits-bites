@@ -43,8 +43,7 @@ const Doctorsignup = () => {
             body,
             {
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': localStorage.getItem("token")
+                    'Content-Type': 'application/json'
                 }
             }
         ).then(
@@ -64,6 +63,7 @@ const Doctorsignup = () => {
                     }
                     localStorage.setItem('username', data.username);
                     localStorage.setItem('token', data.token);
+                    localStorage.setItem('type', data.type);
                     alert("Account Created Sucessful")
                     window.location = '/createprescription'
                 }
